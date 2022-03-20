@@ -1,11 +1,11 @@
-export default function ScreenOne({func}) {
+export default function ScreenOne({setInitiation}) {
     return (
         <main className="screenOne">
             <div>
-                <img src="Assets/logo.png" alt="LOGO" />
+                <img src="Assets/logo.svg" alt="LOGO" />
                 <h1>ZapRecall</h1>
             </div>
-            <button onClick={func}>Iniciar Recall!</button>
+            <button onClick={() => setInitiation(false)}>Iniciar Recall!</button>
         </main>
     )
 }

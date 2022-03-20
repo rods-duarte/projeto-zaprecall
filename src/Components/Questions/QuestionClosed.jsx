@@ -1,13 +1,14 @@
-export default function QuestionClosed({identifier, setIsClosed}) {
+export default function QuestionClosed({identifier, setIsClosed, isAnswered, status}) {
+  const css = `closed`;
+  const img = status === "" ? "right-arrow.svg" : `${status}.svg`;
+
   return (
     <div
-      onClick={() => {
-        setIsClosed(); //! TESTE
-      }}
-      className={`closed`}
+      onClick={isAnswered ? null : () => setIsClosed()}
+      className={css}
     >
-      <span>Pergunta {identifier}</span>
-      <img src="Assets/right-arrow.svg" alt="Setinha" />
+      <span className={status}>Pergunta {identifier}</span>
+      <img src={`Assets/${img}`} alt="Setinha" />
     </div>
   );
 }
