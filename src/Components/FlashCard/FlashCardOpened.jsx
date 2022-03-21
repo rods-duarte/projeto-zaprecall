@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./../Button/Button";
 
 export default function FlashCardOpened({
   text,
@@ -6,7 +7,7 @@ export default function FlashCardOpened({
   answered,
   setAnswered,
   setIsAnswered,
-  setStatus
+  setStatus,
 }) {
   const [isFliped, setIsFliped] = React.useState(false);
 
@@ -15,36 +16,30 @@ export default function FlashCardOpened({
       <div className={isFliped ? `back-face` : `back-face flip-back`}>
         <span>{answer}</span>
         <div className="buttons">
-          <button
-            onClick={() => {
-              setIsAnswered(true);
-              setAnswered([...answered, "wrong"]);
-              setStatus("wrong");
-            }}
-            className="button-wrong"
-          >
-            Nao lembrei
-          </button>
-          <button
-            onClick={() => {
-              setIsAnswered(true);
-              setAnswered([...answered, "half"]);
-              setStatus("half");
-            }}
-            className="button-half"
-          >
-            Quase nao lembrei
-          </button>
-          <button
-            onClick={() => {
-              setIsAnswered(true);
-              setAnswered([...answered, "correct"]);
-              setStatus("correct");
-            }}
-            className="button-correct"
-          >
-            Zap!
-          </button>
+          <Button
+            status="wrong"
+            text="Nao lembrei"
+            answered={answered}
+            setAnswered={setAnswered}
+            setIsAnswered={setIsAnswered}
+            setStatus={setStatus}
+          />
+          <Button
+            status="half"
+            text="Quase nao lembrei"
+            answered={answered}
+            setAnswered={setAnswered}
+            setIsAnswered={setIsAnswered}
+            setStatus={setStatus}
+          />
+          <Button
+            status="correct"
+            text="Zap!"
+            answered={answered}
+            setAnswered={setAnswered}
+            setIsAnswered={setIsAnswered}
+            setStatus={setStatus}
+          />
         </div>
       </div>
       <div className={isFliped ? `front-face` : `front-face flip-front`}>
