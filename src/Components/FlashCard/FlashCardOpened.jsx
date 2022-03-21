@@ -50,6 +50,7 @@ export default function FlashCardOpened({
       <div className={isFliped ? `front-face` : `front-face flip-front`}>
         <span>{text}</span>
         <img
+          className="flip-icon"
           src="Assets/setinha.svg"
           alt="Virar carta"
           onClick={() => {

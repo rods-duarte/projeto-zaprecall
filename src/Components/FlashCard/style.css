@@ -1,5 +1,6 @@
 .question {
     width: 80%;
+    max-width: 550px;
     height: 65px;
     margin: 5px;
     background-color: #fff;
@@ -7,7 +8,13 @@
     color: #333333;
     position: relative;
     transition: ease all 0.3s;
+    font-family: "Recursive";
   }
+
+  
+  .question img {
+    width: 20px;
+}
   
   .closed {
     width: 100%;
@@ -16,6 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 700;
   }
   
   .opened {
@@ -27,8 +35,8 @@
   
   .front-face img {
     position: absolute;
-    width: 20px;
-    right: 15px;
+    width: 25px;
+    right: 20px;
     bottom: 15px;
   }
   
@@ -70,7 +78,6 @@
   .back-face span {
     text-align: left;
     display: inline;
-    font-family: "Recursive";
     font-size: 13px;
     color: #333;
   }
@@ -94,7 +101,7 @@
   
   .buttons button {
     min-width: 60px;
-    max-width: 85px;
+    max-width: 200px;
     width: 33%;
     height: 35px;
     border-radius: 7px;
@@ -120,6 +127,7 @@
   .half,
   .correct {
     text-decoration-line: line-through;
+    font-weight: 400;
   }
   
   .wrong {
@@ -130,8 +138,4 @@
   }
   .correct {
     color: #2fbe34;
-  }
-
-  .question img {
-      width: 15px;
   }
