@@ -1,3 +1,5 @@
+import "./style.css";
+
 export default function Footer({ total, answered }) {
   const validation = answered.filter((answer) => answer === "wrong").length;
   const result = validation > 0 ? {title: "PUTZ!", img: "sad.svg", text: "Ainda faltaram alguns... Mas nao desanime !"} : {title: "PARABENS!", img: "happy.svg", text: "Você não esqueceu de nenhum flashcard!"}

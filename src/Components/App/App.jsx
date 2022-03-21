@@ -1,6 +1,8 @@
 import React from "react";
-import ScreenOne from "./Components/ScreenOne/ScreenOne";
-import ScreenTwo from "./Components/ScreenTwo/ScreenTwo";
+import ScreenOne from "../ScreenOne/ScreenOne";
+import ScreenTwo from "../ScreenTwo/ScreenTwo";
+
+import "./style.css";
 
 export default function App() {
   const [initiation, setInitiation] = React.useState(true);

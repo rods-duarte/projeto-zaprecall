@@ -1,4 +1,4 @@
-export default function QuestionClosed({identifier, setIsClosed, isAnswered, status}) {
+export default function FlashCardClosed({identifier, setIsClosed, isAnswered, status}) {
   const css = `closed`;
   const img = status === "" ? "right-arrow.svg" : `${status}.svg`;
 

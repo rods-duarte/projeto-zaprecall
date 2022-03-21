@@ -1,8 +1,9 @@
 import React from "react";
-import QuestionOpened from "./QuestionOpened";
-import QuestionClosed from "./QuestionClosed";
+import FlashCardOpened from "./FlashCardOpened";
+import FlashCardClosed from "./FlashCardClosed";
+import "./style.css";
 
-export default function Question({ identifier, text, answer, answered, setAnswered }) {
+export default function FlashCard({ identifier, text, answer, answered, setAnswered }) {
   const [isClosed, setIsClosed] = React.useState(true);
   const [isAnswered, setIsAnswered] = React.useState(false);
   const [status, setStatus] = React.useState('');
@@ -11,7 +12,7 @@ export default function Question({ identifier, text, answer, answered, setAnswer
   return (
     <div className={css}>
       {(isClosed || isAnswered) ? (
-        <QuestionClosed
+        <FlashCardClosed
           identifier={identifier}
           setIsClosed={setIsClosed}
           isAnswered={isAnswered}
@@ -19,7 +20,7 @@ export default function Question({ identifier, text, answer, answered, setAnswer
           status={status}
         />
       ) : (
-        <QuestionOpened
+        <FlashCardOpened
           text={text}
           answer={answer}
           answered={answered}

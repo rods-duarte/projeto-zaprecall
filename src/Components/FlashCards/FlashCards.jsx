@@ -1,13 +1,14 @@
 import React from "react";
-import Question from "./Question";
+import FlashCard from "../FlashCard/FlashCard";
+import "./style.css";
 
-export default function Questions({ questions, answered, setAnswered }) {
+export default function FlashCards({ questions, answered, setAnswered }) {
   console.log(questions);
 
   return (
     <div className="questions">
       {questions.map((question, index) => (
-        <Question
+        <FlashCard
           identifier={index + 1}
           text={question.text}
           answer={question.answer}

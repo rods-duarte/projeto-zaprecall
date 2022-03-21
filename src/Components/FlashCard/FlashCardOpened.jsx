@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function QuestionOpened({
+export default function FlashCardOpened({
   text,
   answer,
   answered,

@@ -1,3 +1,5 @@
+import "./style.css";
+
 export default function ScreenOne({setInitiation}) {
     return (
         <main className="screenOne">

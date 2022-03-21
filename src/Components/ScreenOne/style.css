@@ -1,0 +1,46 @@
+.screenOne {
+    width: max-content;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .screenOne > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .screenOne h1 {
+    display: block;
+    width: fit-content;
+    margin: 10px 0;
+  
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .screenOne img {
+    display: block;
+    width: 77px;
+    height: 91px;
+  }
+  
+  .screenOne > button {
+    display: block;
+    width: 182.19px;
+    height: 31px;
+    background-color: #fff;
+    border: 1px solid #d70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+  
+    color: #d70900;
+    font-family: "Recursive";
+    font-size: 12px;
+  }

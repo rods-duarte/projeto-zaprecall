@@ -1,5 +1,5 @@
 import React from "react";
-import Questions from "./../Questions/Questions";
+import FlashCards from "../FlashCards/FlashCards";
 import Header from "./../Header/Header";
 import Footer from "./../Footer/Footer";
 
@@ -48,7 +48,7 @@ export default function ScreenTwo() {
   return (
     <main className="screenTwo">
       <Header />
-      <Questions
+      <FlashCards
         questions={questions}
         answered={answered}
         setAnswered={setAnswered}
