@@ -1,8 +1,0 @@
-.questions {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 50px;
-    margin-bottom: 150px;
-  }
